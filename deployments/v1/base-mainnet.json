@@ -1,0 +1,10 @@
+{
+  "network": "Base Mainnet",
+  "version": "v1",
+  "contract": "BaseFundV1",
+  "address": "0xE3afb90CAfC25C30f9F0ACa29Ec61Df5e73945BA",
+  "txhash": "0xda783519aef036870a29166062380b547ab17ac885d065b8d43c7f61fb22eb7d",
+  "compiler": "0.8.24",
+  "evm": "Cancun",
+  "optimizer": "enabled (200 runs)"
+}
