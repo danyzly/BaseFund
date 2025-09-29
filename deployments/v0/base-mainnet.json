@@ -1,1 +1,13 @@
-
+{
+  "network": "Base Mainnet",
+  "contract": "BaseFundV0",
+  "address": "0x32bc56De80D902374c1c39c50128ee7e9c22d4b7",
+  "txhash": "0xa8d203f626965d7acb440314abfd3cbadf12b38a191d3fa16f6f85f00f7bdd17",
+  "verified": true,
+  "verifiedUrl": "https://basescan.org/address/0x32bc56De80D902374c1c39c50128ee7e9c22d4b7#code",
+  "compiler": "0.8.24",
+  "evm": "Cancun",
+  "optimizer": "enabled (200 runs)",
+  "sourcify": true,
+  "notes": "Deployer is owner; constructor args: goal=1 ETH (wei), duration=30 days."
+}
