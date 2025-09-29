@@ -30,33 +30,36 @@ graph TD
   v6 --> v7["v7 · Factory/Proxy"]
   v7 --> v8["v8 · Meta-transactions"]
   v8 --> v9["v9 · Security Hardening"]
-``` 
 
-| Version | Key Change                         | Config                                               | Sepolia Deploy | Mainnet Deploy | Build Config                                    |
-| ------- | ---------------------------------- | ---------------------------------------------------- | -------------- | -------------- | ----------------------------------------------- |
-| v0      | Basic escrow crowdfunding contract | solc 0.8.24 / optimizer 200 / viaIR off / EVM Cancun | [TBD]          | [TBD]          | [v0 JSON](./build-config/v0.standard-json.json) |
+---
+
+| Version | Key Change                     | Config                                     | Sepolia Deploy                        | Mainnet Deploy                        | Build Config |
+| ------- | ------------------------------ | ------------------------------------------ | ------------------------------------- | -------------------------------------- | ------------ |
+| v0      | Basic escrow crowdfunding contract | solc 0.8.24 / optimizer 200 / viaIR off / EVM Cancun | [TBD] | [TBD] | [v0 JSON](./build-config/v0.standard-json.json) |
+| v1      | Events & Custom Errors         | solc 0.8.24 / optimizer 200 / viaIR off / EVM Cancun | [base-sepolia.json](./deployments/v1/base-sepolia.json) | [base-mainnet.json](./deployments/v1/base-mainnet.json) | [v1 JSON](./build-config/v1.standard-json.json) |
 
 ---
 
 ## Deployments
 
-All contract deployments and interaction logs are organized under the [`/deployments`](./deployments) directory.
+All contract deployments and interaction logs are organized under the `/deployments` directory.
 
 - **v0 Sepolia**
-  - Deployment record: [`base-sepolia.json`](./deployments/v0/base-sepolia.json)
-  - Interaction log: [`base-sepolia-interactions.json`](./deployments/v0/base-sepolia-interactions.json)
+  - Deployment record: [base-sepolia.json](./deployments/v0/base-sepolia.json)
+  - Interaction log: [base-sepolia-interactions.json](./deployments/v0/base-sepolia-interactions.json)
 
 - **v0 Mainnet**
-  - Deployment record: [`base-mainnet.json`](./deployments/v0/base-mainnet.json)
-  - Interaction log: [`base-mainnet-interactions.json`](./deployments/v0/base-mainnet-interactions.json)
+  - Deployment record: [base-mainnet.json](./deployments/v0/base-mainnet.json)
+  - Interaction log: [base-mainnet-interactions.json](./deployments/v0/base-mainnet-interactions.json)
 
-• v1 Sepolia  
-  ○ Deployment record: [base-sepolia.json](./deployments/v1/base-sepolia.json)  
-  ○ Interaction log: [base-sepolia-interactions.json](./deployments/v1/base-sepolia-interactions.json)  
+- **v1 Sepolia**
+  - Deployment record: [base-sepolia.json](./deployments/v1/base-sepolia.json)
+  - Interaction log: [base-sepolia-interactions.json](./deployments/v1/base-sepolia-interactions.json)
 
-• v1 Mainnet  
-  ○ Deployment record: [base-mainnet.json](./deployments/v1/base-mainnet.json)  
-  ○ Interaction log: [base-mainnet-interactions.json](./deployments/v1/base-mainnet-interactions.json)  
+- **v1 Mainnet**
+  - Deployment record: [base-mainnet.json](./deployments/v1/base-mainnet.json)
+  - Interaction log: [base-mainnet-interactions.json](./deployments/v1/base-mainnet-interactions.json)
+
 
 --- 
 
