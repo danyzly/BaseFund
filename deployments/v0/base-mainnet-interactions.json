@@ -1,1 +1,43 @@
-
+{
+  "network": "Base Mainnet",
+  "contract": "BaseFundV0",
+  "address": "0x32bc56De80D902374c1c39c50128ee7e9c22d4b7",
+  "interactions": [
+    {
+      "txhash": "0x997bec12cccb51b35b8ed63390a536fbae7cd64463ddb81bf2ad53258a4e9d6c",
+      "action": "contribute",
+      "from": "deployer_wallet",
+      "note": "Contribution #1 from deployer wallet"
+    },
+    {
+      "txhash": "0xe5a0f20e36df237e6927390db906d5e2df9a78bbd654a7c77a8cb5943f759353",
+      "action": "contribute",
+      "from": "deployer_wallet",
+      "note": "Contribution #2 from deployer wallet"
+    },
+    {
+      "txhash": "0xbf41054e94387b77226cf7bca768e66ff19af93f5efaf750e05ecd3b48eef8af",
+      "action": "contribute",
+      "from": "secondary_wallet",
+      "note": "Contribution #1 from secondary wallet"
+    },
+    {
+      "txhash": "0x6c920dcc31c1463a1f0ef9f0956d2795825a7ae4d7bd24b0db82403008d51d56",
+      "action": "contribute",
+      "from": "secondary_wallet",
+      "note": "Contribution #2 from secondary wallet"
+    },
+    {
+      "txhash": "0x56254ff09df41893d4f872c00ee3f4ee58d5db35d4d49a1fa94419784ab6c10e",
+      "action": "contribute",
+      "from": "secondary_wallet",
+      "note": "Contribution #3 from secondary wallet"
+    }
+  ],
+  "metadata": {
+    "compiler": "0.8.24",
+    "evm": "Cancun",
+    "optimizer": "enabled (200 runs)",
+    "verified": true
+  }
+}
