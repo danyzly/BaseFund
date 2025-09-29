@@ -50,6 +50,14 @@ All contract deployments and interaction logs are organized under the [`/deploym
   - Deployment record: [`base-mainnet.json`](./deployments/v0/base-mainnet.json)
   - Interaction log: [`base-mainnet-interactions.json`](./deployments/v0/base-mainnet-interactions.json)
 
+• v1 Sepolia  
+  ○ Deployment record: [base-sepolia.json](./deployments/v1/base-sepolia.json)  
+  ○ Interaction log: [base-sepolia-interactions.json](./deployments/v1/base-sepolia-interactions.json)  
+
+• v1 Mainnet  
+  ○ Deployment record: [base-mainnet.json](./deployments/v1/base-mainnet.json)  
+  ○ Interaction log: [base-mainnet-interactions.json](./deployments/v1/base-mainnet-interactions.json)  
+
 --- 
 
 ## Roadmap & Contributions
