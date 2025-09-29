@@ -1,1 +1,28 @@
-
+{
+  "network": "Base Sepolia",
+  "contract": "BaseFundV0",
+  "address": "0x105DB90C8f3DacF7146f8F7Afa2078563386b3a6",
+  "interactions": [
+    {
+      "txhash": "0xe0d9437ad8f7265adb0c84ca140a57f5340529d68d161254ebdb7154bd1331dd",
+      "action": "contribute",
+      "note": "Primera contribución de prueba"
+    },
+    {
+      "txhash": "0xedfb695ba0ab705e750100abff0f5ffbd094cabc37dbb2382c162048cd0291e8",
+      "action": "contribute",
+      "note": "Segunda contribución de prueba"
+    },
+    {
+      "txhash": "0x868e028768a9a0cb21b945560aa6d13b6bbada2e3d3de6a1b163cb91b7c5c26a",
+      "action": "refund",
+      "note": "Ejecución de refund tras deadline"
+    }
+  ],
+  "metadata": {
+    "compiler": "0.8.24",
+    "evm": "Cancun",
+    "optimizer": "enabled (200 runs)",
+    "verified": true
+  }
+}
