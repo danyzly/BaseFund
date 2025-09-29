@@ -1,1 +1,12 @@
-
+{
+  "network": "Base Sepolia",
+  "contract": "BaseFundV1",
+  "address": "0x18DCDE752bB4926d8282a5c3dE6A27F27099E3ee",
+  "txhash": "0x3fa71866e50f35fa4c439b2818a4e02385b884d32b6e3f2ecdf8f787c575da80",
+  "deployer": "0xDA85BC2bAc8E2A2E082FebC72fd6c7bC8D0962CD",
+  "verified": false,
+  "compiler": "0.8.24",
+  "evm": "Cancun",
+  "optimizer": "enabled (200 runs)",
+  "notes": "BaseFundV1 initial deployment on Base Sepolia"
+}
