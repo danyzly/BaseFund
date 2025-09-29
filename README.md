@@ -36,7 +36,23 @@ graph TD
 | ------- | ---------------------------------- | ---------------------------------------------------- | -------------- | -------------- | ----------------------------------------------- |
 | v0      | Basic escrow crowdfunding contract | solc 0.8.24 / optimizer 200 / viaIR off / EVM Cancun | [TBD]          | [TBD]          | [v0 JSON](./build-config/v0.standard-json.json) |
 
-Roadmap & Contributions
+---
+
+## Deployments
+
+All contract deployments and interaction logs are organized under the [`/deployments`](./deployments) directory.
+
+- **v0 Sepolia**
+  - Deployment record: [`base-sepolia.json`](./deployments/v0/base-sepolia.json)
+  - Interaction log: [`base-sepolia-interactions.json`](./deployments/v0/base-sepolia-interactions.json)
+
+- **v0 Mainnet**
+  - Deployment record: [`base-mainnet.json`](./deployments/v0/base-mainnet.json)
+  - Interaction log: [`base-mainnet-interactions.json`](./deployments/v0/base-mainnet-interactions.json)
+
+--- 
+
+## Roadmap & Contributions
 
 ✅ v0: Basic escrow contract.
 
@@ -48,7 +64,9 @@ Contributions are welcome!
 Please check CONTRIBUTING.md
  and open issues or PRs with enhancements.
 
-License
+---
+
+## License
 
 This project is licensed under the MIT License.
 See LICENSE for details.
