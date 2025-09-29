@@ -18,6 +18,7 @@ Each version demonstrates improvements in **security, gas efficiency, features, 
 ---
 
 ## Evolution Tree
+
 ```mermaid
 graph TD
   v0["v0 · Basic Escrow"] --> v1["v1 · Events & Custom Errors"]
@@ -29,6 +30,7 @@ graph TD
   v6 --> v7["v7 · Factory/Proxy"]
   v7 --> v8["v8 · Meta-transactions"]
   v8 --> v9["v9 · Security Hardening"]
+``` 
 
 | Version | Key Change                         | Config                                               | Sepolia Deploy | Mainnet Deploy | Build Config                                    |
 | ------- | ---------------------------------- | ---------------------------------------------------- | -------------- | -------------- | ----------------------------------------------- |
