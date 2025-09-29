@@ -1,0 +1,10 @@
+{
+  "network": "Base Sepolia",
+  "contract": "BaseFundEscrow",
+  "address": "0x105DB90C8f3DacF7146f8F7Afa2078563386b3a6",
+  "txHash": "0xb8c1450c42d1641fd06e62fb51783aef658896b92ad65920eb2e5ab86cc83fe4",
+  "deployer": "0xDA85BC2bAc8E2A2E082FebC72fd6c7bC8D0962CD",
+  "compiler": "0.8.24",
+  "evm": "Cancun",
+  "optimizer": "enabled (200 runs)"
+}
