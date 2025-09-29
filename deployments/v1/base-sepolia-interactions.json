@@ -1,1 +1,41 @@
-
+{
+  "network": "Base Sepolia",
+  "version": "v1",
+  "contract": "0x18DCDE752bB4926d8282a5c3dE6A27F27099E3ee",
+  "deployer": "0xDA85BC2bAc8E2A2E082FebC72fd6c7bC8D0962CD",
+  "interactions": {
+    "contributions": [
+      {
+        "from": "0xDA85BC2bAc8E2A2E082FebC72fd6c7bC8D0962CD",
+        "hash": "0xac4ea5c49de17af75446208a64ab2035703405f4eb418e8b7f82bf5767aa341f",
+        "amount": "0.0001 ETH"
+      },
+      {
+        "from": "0xDA85BC2bAc8E2A2E082FebC72fd6c7bC8D0962CD",
+        "hash": "0x7ede973dcaa70518f5598fd95f69611fb9cd2caf9cd8ef30662868980848ac01",
+        "amount": "0.0002 ETH"
+      },
+      {
+        "from": "0xDA85BC2bAc8E2A2E082FebC72fd6c7bC8D0962CD",
+        "hash": "0xf41c5d6fb2292026bd75eb03d0d5603e8d49d8022e1dce32fec1c90d324e73bd",
+        "amount": "0.0003 ETH"
+      },
+      {
+        "from": "0x12917EA7...5663dDe55",
+        "hash": "0x03e38fe3c182c4154af647cc2c6bc51b676ea3615bb87108b142018040ea504c",
+        "amount": "0.000111 ETH"
+      },
+      {
+        "from": "0x12917EA7...5663dDe55",
+        "hash": "0x502812f2f8a0c38043a6d619ae2ee70ee56228bbf5a29d749ff2458123693b0c",
+        "amount": "0.000222 ETH"
+      },
+      {
+        "from": "0x12917EA7...5663dDe55",
+        "hash": "0x424b50c610d019667848aa4a5ace8ffe2c1254f668596cc0a9fe94a7830510fe",
+        "amount": "0.000333 ETH"
+      }
+    ],
+    "notes": "Six contributions recorded. Withdraw/refund attempts reverted as expected since deadline/goal conditions are not met."
+  }
+}
