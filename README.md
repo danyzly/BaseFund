@@ -31,6 +31,7 @@ graph TD
   v7 --> v8["v8 · Meta-transactions"]
   v8 --> v9["v9 · Security Hardening"]
 
+```
 ---
 
 | Version | Key Change                     | Config                                     | Sepolia Deploy                        | Mainnet Deploy                        | Build Config |
