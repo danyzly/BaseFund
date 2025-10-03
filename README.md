@@ -115,6 +115,14 @@ Notes
 
 ---
 
+## Security
+
+This repository documents an experimental smart-contract series.  
+If you believe you’ve found a vulnerability, please report it **privately via GitHub Security Advisories** for this repository. We acknowledge within **5 business days**.  
+See [SECURITY.md](./SECURITY.md) for full details.
+
+---
+
 ## License
 
 This project is licensed under the MIT License.
