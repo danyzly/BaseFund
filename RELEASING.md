@@ -19,10 +19,10 @@ Align each on-chain release (**v0–v10**) with Git history using **annotated Gi
 
 > ✅ **Recommended**: tag the **historical commit** that introduced each version (more accurate than tagging `HEAD`).
 
-### Option A — Historical commit (recommended)
+```markdown
 
 1. **Find the commit that added a version** (example for `v6`):
-   ```bash
+   
    git log --pretty=oneline -- deployments/v6
    # Copy the SHA of the commit that added v6 (repeat per version)
 
@@ -43,3 +43,5 @@ git tag -a v10 <sha_v10> -m "v10: UX & security"
 3. Push all tags:
 
 git push origin --tags
+
+```
