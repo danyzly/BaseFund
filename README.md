@@ -11,9 +11,9 @@
 ---
 
 ## Overview
-**BaseFund** is an experimental series of smart contracts deployed on [Base Network](https://base.org).  
-The project evolves step by step from a **basic escrow crowdfunding contract** into more complex and feature-rich versions.  
-Each version demonstrates improvements in **security, gas efficiency, features, and developer best practices**.  
+**BaseFund** is an experimental series of smart contracts deployed on [Base Network](https://base.org).
+The project evolves step-by-step from a **basic escrow crowdfunding contract** into more complex and feature-rich versions.
+Each version highlights improvements in **security, gas efficiency, developer UX, and best practices**.
 
 ---
 
@@ -28,16 +28,26 @@ graph TD
   v4 --> v5["v5 · ERC-20 Contributions"]
   v5 --> v6["v6 · Fees & Treasury"]
   v6 --> v7["v7 · Factory/Proxy"]
-  v7 --> v8["v8 · Meta-transactions"]
+  v7 --> v8["v8 · Meta-transactions (ERC-2771)"]
   v8 --> v9["v9 · Security Hardening"]
-
+  v9 --> v10["v10 · UX & Security: Permit/Allowlist/Cooldowns"]
 ```
+
 ---
 
-| Version | Key Change                     | Config                                     | Sepolia Deploy                        | Mainnet Deploy                        | Build Config |
-| ------- | ------------------------------ | ------------------------------------------ | ------------------------------------- | -------------------------------------- | ------------ |
-| v0      | Basic escrow crowdfunding contract | solc 0.8.24 / optimizer 200 / viaIR off / EVM Cancun | [TBD] | [TBD] | [v0 JSON](./build-config/v0.standard-json.json) |
-| v1      | Events & Custom Errors         | solc 0.8.24 / optimizer 200 / viaIR off / EVM Cancun | [base-sepolia.json](./deployments/v1/base-sepolia.json) | [base-mainnet.json](./deployments/v1/base-mainnet.json) | [v1 JSON](./build-config/v1.standard-json.json) |
+| Version | Key Change                                | Sepolia Deploy                                           | Mainnet Deploy                                           | Build Config                                                                                                                                                                        |
+| ------- | ----------------------------------------- | -------------------------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| v0      | Basic escrow crowdfunding                 | [base-sepolia.json](./deployments/v0/base-sepolia.json)  | [base-mainnet.json](./deployments/v0/base-mainnet.json)  | mainnet: [v0.standard-json.mainnet.json](./build-config/v0.standard-json.mainnet.json) · sepolia: [v0.standard-json.sepolia](./build-config/v0.standard-json.sepolia)               |
+| v1      | Events & custom errors                    | [base-sepolia.json](./deployments/v1/base-sepolia.json)  | [base-mainnet.json](./deployments/v1/base-mainnet.json)  | mainnet: [v1.standard-json.mainnet.json](./build-config/v1.standard-json.mainnet.json) · sepolia: [v1.standard-json.sepolia.json](./build-config/v1.standard-json.sepolia.json)     |
+| v2      | Roles & AccessControl                     | [base-sepolia.json](./deployments/v2/base-sepolia.json)  | [base-mainnet.json](./deployments/v2/base-mainnet.json)  | mainnet: [v2.standard-json.mainnet.json](./build-config/v2.standard-json.mainnet.json) · sepolia: [v2.standard-json.sepolia.json](./build-config/v2.standard-json.sepolia.json)     |
+| v3      | Pausable + ReentrancyGuard                | [base-sepolia.json](./deployments/v3/base-sepolia.json)  | [base-mainnet.json](./deployments/v3/base-mainnet.json)  | mainnet: [v3.standard-json.mainnet.json](./build-config/v3.standard-json.mainnet.json) · sepolia: [v3.standard-json.sepolia.json](./build-config/v3.standard-json.sepolia.json)     |
+| v4      | Gas optimizations                         | [base-sepolia.json](./deployments/v4/base-sepolia.json)  | [base-mainnet.json](./deployments/v4/base-mainnet.json)  | mainnet: [v4.standard-json.mainnet.json](./build-config/v4.standard-json.mainnet.json) · sepolia: [v4.standard-json.sepolia.json](./build-config/v4.standard-json.sepolia.json)     |
+| v5      | ERC-20 contributions                      | [base-sepolia.json](./deployments/v5/base-sepolia.json)  | [base-mainnet.json](./deployments/v5/base-mainnet.json)  | mainnet: [v5.standard-json.mainnet.json](./build-config/v5.standard-json.mainnet.json) · sepolia: [v5.standard-json.sepolia.json](./build-config/v5.standard-json.sepolia.json)     |
+| v6      | Fees & treasury flows                     | [base-sepolia.json](./deployments/v6/base-sepolia.json)  | [base-mainnet.json](./deployments/v6/base-mainnet.json)  | mainnet: [v6.standard-json.mainnet.json](./build-config/v6.standard-json.mainnet.json) · sepolia: [v6.standard-json.sepolia.json](./build-config/v6.standard-json.sepolia.json)     |
+| v7      | Factory/Proxy ready                       | [base-sepolia.json](./deployments/v7/base-sepolia.json)  | [base-mainnet.json](./deployments/v7/base-mainnet.json)  | mainnet: [v7.standard-json.mainnet.json](./build-config/v7.standard-json.mainnet.json) · sepolia: [v7.standard-json.sepolia.json](./build-config/v7.standard-json.sepolia.json)     |
+| v8      | Meta-tx (ERC-2771 relayer)                | [base-sepolia.json](./deployments/v8/base-sepolia.json)  | [base-mainnet.json](./deployments/v8/base-mainnet.json)  | mainnet: [v8.standard-json.mainnet.json](./build-config/v8.standard-json.mainnet.json) · sepolia: [v8.standard-json.sepolia.json](./build-config/v8.standard-json.sepolia.json)     |
+| v9      | Security hardening                        | [base-sepolia.json](./deployments/v9/base-sepolia.json)  | [base-mainnet.json](./deployments/v9/base-mainnet.json)  | mainnet: [v9.standard-json.mainnet.json](./build-config/v9.standard-json.mainnet.json) · sepolia: [v9.standard-json.sepolia.json](./build-config/v9.standard-json.sepolia.json)     |
+| v10     | UX/Security: Permit, allowlist, cooldowns | [base-sepolia.json](./deployments/v10/base-sepolia.json) | [base-mainnet.json](./deployments/v10/base-mainnet.json) | mainnet: [v10.standard-json.mainnet.json](./build-config/v10.standard-json.mainnet.json) · sepolia: [v10.standard-json.sepolia.json](./build-config/v10.standard-json.sepolia.json) |
 
 ---
 
@@ -66,16 +76,12 @@ All contract deployments and interaction logs are organized under the `/deployme
 
 ## Roadmap & Contributions
 
-✅ v0: Basic escrow contract.
+✅ v0–v10 delivered (progressive features and hardening).
 
-🔄 v1–v9: Iterative improvements (events, roles, security, gas efficiency, ERC-20 support, factories, meta-transactions, hardening).
+🧪 Future: fuzzing, slippage protections for volatile tokens, optional timelocks/multisigs for admin ops, extended docs & scripts.
 
-🚀 Future: Open for contributions and community proposals.
-
-Contributions are welcome!
-Please check CONTRIBUTING.md
- and open issues or PRs with enhancements.
-
+Contributions welcome — please open issues or PRs. See LICENSE for terms.
+ 
 ---
 
 ## License
