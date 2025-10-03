@@ -46,3 +46,24 @@ git tag -a v10 <sha_v10> -m "v10: UX & security"
 git push origin --tags
 
 ```
+
+---
+
+## Release notes template
+
+```markdown
+
+### BaseFund vX — Release Notes
+**Key change:** <short summary>
+
+**Deployments**
+- Sepolia: `deployments/vX/base-sepolia.json`
+  (interactions: `deployments/vX/base-sepolia-interactions.json`)
+- Mainnet: `deployments/vX/base-mainnet.json`
+  (interactions: `deployments/vX/base-mainnet-interactions.json`)
+
+**Build Configs**
+- Sepolia: `build-config/vX.standard-json.sepolia.json`
+- Mainnet: `build-config/vX.standard-json.mainnet.json`
+
+```
