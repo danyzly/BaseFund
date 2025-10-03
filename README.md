@@ -53,24 +53,21 @@ graph TD
 
 ## Deployments
 
-All contract deployments and interaction logs are organized under the `/deployments` directory.
+All contract deployments and minimal interaction logs live under `/deployments`.
 
-- **v0 Sepolia**
-  - Deployment record: [base-sepolia.json](./deployments/v0/base-sepolia.json)
-  - Interaction log: [base-sepolia-interactions.json](./deployments/v0/base-sepolia-interactions.json)
-
-- **v0 Mainnet**
-  - Deployment record: [base-mainnet.json](./deployments/v0/base-mainnet.json)
-  - Interaction log: [base-mainnet-interactions.json](./deployments/v0/base-mainnet-interactions.json)
-
-- **v1 Sepolia**
-  - Deployment record: [base-sepolia.json](./deployments/v1/base-sepolia.json)
-  - Interaction log: [base-sepolia-interactions.json](./deployments/v1/base-sepolia-interactions.json)
-
-- **v1 Mainnet**
-  - Deployment record: [base-mainnet.json](./deployments/v1/base-mainnet.json)
-  - Interaction log: [base-mainnet-interactions.json](./deployments/v1/base-mainnet-interactions.json)
-
+| Version | Sepolia | Mainnet |
+| --- | --- | --- |
+| **v0**  | [deploy](./deployments/v0/base-sepolia.json) · [interactions](./deployments/v0/base-sepolia-interactions.json) | [deploy](./deployments/v0/base-mainnet.json) · [interactions](./deployments/v0/base-mainnet-interactions.json) |
+| **v1**  | [deploy](./deployments/v1/base-sepolia.json) · [interactions](./deployments/v1/base-sepolia-interactions.json) | [deploy](./deployments/v1/base-mainnet.json) · [interactions](./deployments/v1/base-mainnet-interactions.json) |
+| **v2**  | [deploy](./deployments/v2/base-sepolia.json) · [interactions](./deployments/v2/base-sepolia-interactions.json) | [deploy](./deployments/v2/base-mainnet.json) · [interactions](./deployments/v2/base-mainnet-interactions.json) |
+| **v3**  | [deploy](./deployments/v3/base-sepolia.json) · [interactions](./deployments/v3/base-sepolia-interactions.json) | [deploy](./deployments/v3/base-mainnet.json) · [interactions](./deployments/v3/base-mainnet-interactions.json) |
+| **v4**  | [deploy](./deployments/v4/base-sepolia.json) · [interactions](./deployments/v4/base-sepolia-interactions.json) | [deploy](./deployments/v4/base-mainnet.json) · [interactions](./deployments/v4/base-mainnet-interactions.json) |
+| **v5**  | [deploy](./deployments/v5/base-sepolia.json) · [interactions](./deployments/v5/base-sepolia-interactions.json) | [deploy](./deployments/v5/base-mainnet.json) · [interactions](./deployments/v5/base-mainnet-interactions.json) |
+| **v6**  | [deploy](./deployments/v6/base-sepolia.json) · [interactions](./deployments/v6/base-sepolia-interactions.json) | [deploy](./deployments/v6/base-mainnet.json) · [interactions](./deployments/v6/base-mainnet-interactions.json) |
+| **v7**  | [deploy](./deployments/v7/base-sepolia.json) · [interactions](./deployments/v7/base-sepolia-interactions.json) | [deploy](./deployments/v7/base-mainnet.json) · [interactions](./deployments/v7/base-mainnet-interactions.json) |
+| **v8**  | [deploy](./deployments/v8/base-sepolia.json) · [interactions](./deployments/v8/base-sepolia-interactions.json) | [deploy](./deployments/v8/base-mainnet.json) · [interactions](./deployments/v8/base-mainnet-interactions.json) |
+| **v9**  | [deploy](./deployments/v9/base-sepolia.json) · [interactions](./deployments/v9/base-sepolia-interactions.json) | [deploy](./deployments/v9/base-mainnet.json) · [interactions](./deployments/v9/base-mainnet-interactions.json) |
+| **v10** | [deploy](./deployments/v10/base-sepolia.json) · [interactions](./deployments/v10/base-sepolia-interactions.json) | [deploy](./deployments/v10/base-mainnet.json) · [interactions](./deployments/v10/base-mainnet-interactions.json) |
 
 --- 
 
