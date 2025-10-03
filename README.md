@@ -81,6 +81,40 @@ Contributions welcome — please open issues or PRs. See LICENSE for terms.
  
 ---
 
+## Verify on BaseScan/Etherscan (Standard JSON)
+
+**Prereqs**
+- Pick the version (vX) and network (Sepolia/Mainnet).
+- Open the matching Standard JSON in `build-config/vX.standard-json.<network>.json`.
+
+**UI flow (recommended)**
+1. Open your contract on BaseScan → **Contract** tab → **Verify & Publish**.
+2. Method: **Solidity (Standard-JSON-Input)**.
+3. Paste the full contents of the Standard JSON file.
+4. **Contract Name**: `BaseFundVX.sol:BaseFundVX` (match the exact version).
+5. Settings (solc 0.8.24, optimizer 200, EVM Cancún) are already embedded.
+6. Submit and wait for **Pass**.
+
+**API flow (advanced)**
+
+```bash
+# Replace: API_KEY, CONTRACT, and the version/network path
+curl -X POST "https://api.basescan.org/api" \
+  -d module=contract \
+  -d action=verifysourcecode \
+  -d apikey=API_KEY \
+  -d contractaddress=CONTRACT \
+  -d codeformat=solidity-standard-json-input \
+  -d contractname="BaseFundV10.sol:BaseFundV10" \
+  --data-urlencode sourceCode@build-config/v10.standard-json.mainnet.json
+```
+
+Notes
+• Do not duplicate compiler/optimizer flags in the form; they’re inside the JSON.
+• Constructor args are not required here (we don’t pass ABI-encoded params via the form).
+
+---
+
 ## License
 
 This project is licensed under the MIT License.
