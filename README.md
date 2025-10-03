@@ -123,6 +123,13 @@ See [SECURITY.md](./SECURITY.md) for full details.
 
 ---
 
+## Releases
+
+Looking for the release & tagging workflow?  
+See **[RELEASING.md](./RELEASING.md)** — concise guide for annotated tags (v0–v10), verification, and optional GitHub Releases.
+
+---
+
 ## License
 
 This project is released under the **MIT License**.  
