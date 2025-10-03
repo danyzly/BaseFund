@@ -24,6 +24,7 @@ Align each on-chain release (**v0–v10**) with Git history using **annotated Gi
 1. **Find the commit that added a version** (example for `v6`):
    
    git log --pretty=oneline -- deployments/v6
+
    # Copy the SHA of the commit that added v6 (repeat per version)
 
 2. Create annotated tags (replace <sha_vX>):
