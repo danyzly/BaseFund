@@ -125,5 +125,5 @@ See [SECURITY.md](./SECURITY.md) for full details.
 
 ## License
 
-This project is licensed under the MIT License.
-See LICENSE for details.
+This project is released under the **MIT License**.  
+See [LICENSE](./LICENSE) for the full text, permissions, and attribution requirements.
