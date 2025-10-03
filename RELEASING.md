@@ -21,8 +21,7 @@ This is the most accurate method.
    ```bash
    git log --pretty=oneline -- deployments/v6
    # Copy the SHA of the commit that added v6
-  ```bash
-
+  
 2. Create an annotated tag per version:
 
 git tag -a v0  <sha_v0>  -m "v0: Basic escrow"
